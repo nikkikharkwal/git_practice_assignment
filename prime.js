@@ -1,8 +1,14 @@
 function prime (number) {
+    let flag = 0;
     for(let i = 1; i <= number; i++){
-        if(number%2==1){
-            return true;
+        if(number%i==0){
+            flag++;
         }
     }
-    return false;
+    if(flag==2){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
