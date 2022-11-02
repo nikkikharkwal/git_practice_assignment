@@ -1,3 +1,4 @@
+
 function prime (number) {
     let flag = 0;
     for(let i = 1; i <= number; i++){
@@ -12,3 +13,4 @@ function prime (number) {
         return false;
     }
 }
+
