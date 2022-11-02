@@ -1,12 +1,12 @@
 
 function prime (number) {
-    let flag = 0;
+    let factor = 0;
     for(let i = 1; i <= number; i++){
         if(number%i==0){
-            flag++;
+            factor++;
         }
     }
-    if(flag==2){
+    if(factor==2){
         return true;
     }
     else {
@@ -14,7 +14,7 @@ function prime (number) {
     }
 }
 
-let ans=prime(13);
+let ans=prime(17);
 if (ans==true){
     console.log("Prime");
 }else{
