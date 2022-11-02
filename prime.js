@@ -14,3 +14,9 @@ function prime (number) {
     }
 }
 
+let ans=prime(13);
+if (ans==true){
+    console.log("Prime");
+}else{
+console.log("Not Prime");}
+
