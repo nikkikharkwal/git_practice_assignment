@@ -1,8 +1,16 @@
-let inputValue= 7;
-let isprime=inputValue==1? false:true;  //bcoz 1 is not prime
 
-for(let i=2;i<inputValue;i++){
-  inputValue%i==0? isprime*=false :isprime*=true;
-};
+function prime (number) {
+    let flag = 0;
+    for(let i = 1; i <= number; i++){
+        if(number%i==0){
+            flag++;
+        }
+    }
+    if(flag==2){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
-alert(`${inputValue} is ${isprime? 'prime':'not prime'} number`);
